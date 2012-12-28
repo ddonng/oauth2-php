@@ -53,7 +53,7 @@ try {
 <form method="post" action="authorize.php">
       <?php foreach ($auth_params as $key => $value) : ?>
       	<input type="hidden"
-	name="<?php htmlspecialchars($key, ENT_QUOTES); ?>"
+	name="<?php echo htmlspecialchars($key, ENT_QUOTES); ?>"
 	value="<?php echo htmlspecialchars($value, ENT_QUOTES); ?>" />
       <?php endforeach; ?>
       Do you authorize the app to do its thing?
